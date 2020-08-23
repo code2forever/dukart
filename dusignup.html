@@ -1,0 +1,118 @@
+<html>
+<head>
+<style>
+*{
+	font-family:cursive;
+}
+.back{
+	height:110%;
+	width:100%;
+	margin: -2% 0%; 
+	background-image:linear-gradient(to top,rgba(0,0,0,0.5),rgba(0,0,0,0)),url(wall3.jpg);
+	background-size:cover;
+	position: absolute;
+} 
+.form{
+	width: 380px;
+	height: 510px;
+	position:relative;
+	margin: 3% auto;
+	background:#ffff;
+	padding: 7px 15px;
+	border-radius: 20px
+}
+.box{
+	width: 350px;
+	height: 40px;
+	position:relative;
+	margin:3% auto;
+	background:orange;
+	padding: 7px 15px;
+	border-radius: 30px;
+	box-shadow:5px 5px 5px 5px rgba(100,100,0,0.5);
+}
+.button{
+	font-size:15px;
+	padding: 9px 60px;
+	cursor: pointer;
+	background: transparent;
+	border: 0;
+	outline: none;
+	position: relative;
+}
+#log{
+	top:0;
+	left: 0;
+	position:absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right,#ff105f,#ffad06);
+    border-radius:30px;
+}
+.social{
+	margin:60px auto;
+	text-align:center; 
+}
+.social img{
+	width:50px;
+	margin:85% auto;
+	padding: 0px 5px;
+	cursor: pointer;
+}
+.data{
+	margin:10% auto;
+	width: 280px;
+	padding:10px 10px;
+	position:absolute;
+	border-radius:30px;
+}
+.id{
+	margin: 5% 25%;
+	border-radius:30px;
+	width:200px;
+	height: 30px;
+	border-top:0;
+	border-right:0;
+	border-left:0;
+	border-bottom:1px solid grey;
+	text-align:left;
+}
+.check{
+	width:5%;
+	margin:5% 5%;
+	padding:100px 0px;
+}
+.submit{
+	height:35px;
+	width: 45%;
+	margin:10% 40%;
+	border-radius:20px;
+	background:teal;
+}
+</style>
+<title>Signup form</title>
+</head>
+<body>
+<div class="back">
+<div class="form">
+<div class="box">
+<div id="log"></div>
+<a href="dulogin.html"><button type="button" class="button">Log In</button></a>
+<button type="button" class="button">Sign Up</button>
+</div>
+<form action="#" method="POST" class="data">
+<input type="text" name="USERNAME" class="id" placeholder="USERNAME" required>
+<input type="text" name="EMAIL-ID" class="id" placeholder="EMAIL-ID" required>
+<input type="text" name="PASSWORD" class="id" placeholder="PASSWORD"required>
+<input type="checkbox" name="T&C" value="Agreed" class="check" required><span><font size="2px"><b>I Agree To The Terms & Conditions</b></font></span>
+<button type="submit" value="submit" class="submit">Sign Up</button>
+</form>
+<div class="social">
+<img src="fb.png">
+<img src="insta.png">
+<img src="google.png">
+</div>
+</div>
+</div>
+</body>
+</html>
